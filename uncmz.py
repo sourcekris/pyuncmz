@@ -74,16 +74,16 @@ def main(argv):
             open(dclfile.name, 'wb').write(compdata)
 
             deark = "deark"
-            if args.dearkpath:
-                if os.path.exists(args.dearkpath):
-                    if os.path.isfile(args.dearkpath):
-                        deark = args.dearkpath
+            if args.deark:
+                if os.path.exists(args.deark):
+                    if os.path.isfile(args.deark):
+                        deark = args.deark
                     
-                    if os.path.isdir(args.dearkpath) and os.path.isfile(os.path.join(args.dearkpath, deark)):
-                        deark = os.path.join(args.dearkpath, deark)
+                    if os.path.isdir(args.deark) and os.path.isfile(os.path.join(args.deark, deark)):
+                        deark = os.path.join(args.deark, deark)
                 
                 if deark == "deark":
-                    print(f"deark not found at path {args.dearkpath} so aborting.")
+                    print(f"deark not found at path {args.deark} so aborting.")
                     return
             with tempfile.NamedTemporaryFile(delete=False) as uncfile:
                 cmdline = [deark, '-m', 'dclimplode',dclfile.name, '-o', uncfile.name]
