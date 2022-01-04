@@ -36,7 +36,9 @@ Reverse engineering of the format I found:
 - 4 byte integer - Uncompressed data size
 - 4 byte checksum - unknown checksum algorithm?
 - 1 byte filename length
-- 3 bytes unknown, usually "\x00\x00\x00" but is sometimes "\x00\x02\x00"
+- 1 byte unknown, usually "\x00"
+- 1 byte unknown but is sometimes 02, 10, 40 or 42. Possibly some bitfield.
+- 1 byte unknown, usually "\x00"
 - n bytes Filename 
 - remainder - DCL Imploded payload
 

@@ -3,7 +3,7 @@
 //
 //      File: cmz.bt
 //   Authors: Kris Hunt
-//   Version: 1.0
+//   Version: 1.1
 //   Purpose: Lotus CMZ archiver format
 //  Category: Compression
 //  ID Bytes: Clay
@@ -14,8 +14,10 @@ struct HEADER {
     int compressedSize;
     int uncompressedSize;
     int checkSum;
-    ubyte filenameLen;
-    byte unknown[3];
+    uchar filenameLen;
+    uchar unknownNull;
+    uchar unknownBitfield;
+    uchar unknownNull;
     char filename[filenameLen];
 } headerInfo <bgcolor=cLtBlue>;
 
