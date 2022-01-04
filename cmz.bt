@@ -1,0 +1,26 @@
+//------------------------------------------------
+//--- 010 Editor v12.0.1 Binary Template
+//
+//      File: cmz.bt
+//   Authors: Kris Hunt
+//   Version: 1.0
+//   Purpose: Lotus CMZ archiver format
+//  Category: Compression
+//  ID Bytes: Clay
+//------------------------------------------------
+
+struct HEADER {
+    char fileID[4];
+    int compressedSize;
+    int uncompressedSize;
+    int checkSum;
+    ubyte filenameLen;
+    byte unknown[3];
+    char filename[filenameLen];
+} headerInfo <bgcolor=cLtBlue>;
+
+local int ds = FileSize() - FTell();
+struct DATA {
+    uchar dclImplodedData[ds];
+    
+} headerInfo <bgcolor=cLtYellow>;
