@@ -6,7 +6,21 @@ header.
 #### Usage
 
 ```shell
-p
+usage: uncmz.py [-h] -e FILENAME [-d PATH] [-p PATH]
+
+Extract Lotus CMZ Files.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e FILENAME, --extract FILENAME
+                        The CMZ file to extract.
+  -d PATH, --destination PATH
+                        An optional output folder.
+  -p PATH, --deark PATH
+                        Path to deark archiver in case it is not in $PATH
+
+Please file bugs on the GitHub Issues. Thanks
+```
 
 #### Format Info
 
