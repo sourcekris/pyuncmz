@@ -3,6 +3,11 @@
 Probably a proprietary format by Lotus. These files are DCL imploded with some basic
 header.
 
+#### Requires
+
+- Python 3
+- Deark Archiver: https://github.com/jsummers/deark
+
 #### Usage
 
 ```shell
@@ -35,7 +40,7 @@ Reverse engineering of the format I found:
 - n bytes Filename 
 - remainder - DCL Imploded payload
 
-A 010 Editor binary template covering the file format is included in this repo.
+A 010 Editor [binary template](cmz.bt) covering the file format is included in this repo.
 
 #### References
 
