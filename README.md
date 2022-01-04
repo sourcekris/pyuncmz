@@ -1,7 +1,12 @@
-## uncmz - extractor for AmiPro CMZ files
+## uncmz - extractor for Lotus CMZ files
 
 Probably a proprietary format by Lotus. These files are DCL imploded with some basic
 header.
+
+#### Usage
+
+```shell
+p
 
 #### Format Info
 
