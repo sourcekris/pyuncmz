@@ -1,3 +1,12 @@
+#### Deprecated
+
+I re-wrote this in Golang so native compiled binary releases make actually using this
+as a tool much simpler. See [https://github.com/sourcekris/uncmz](here) for the version
+that will be supported going forward.
+
+For binary releases, go directly here: https://github.com/sourcekris/uncmz/releases/latest
+
+
 ## uncmz - extractor for Lotus CMZ files
 
 Probably a proprietary format by Lotus. These files are DCL imploded with some basic
