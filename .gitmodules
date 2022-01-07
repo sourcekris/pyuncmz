@@ -1,0 +1,3 @@
+[submodule "pwexplode"]
+	path = pwexplode
+	url = git@github.com:Schallaven/pwexplode.git
